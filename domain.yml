@@ -1,0 +1,134 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
+intents:
+- affirm
+- bye
+- compare_entities
+- deny
+- greet
+- help
+- out_of_scope
+- query_attribute
+- query_entities
+- resolve_entity
+entities:
+- account
+- account_type
+- amount
+- attribute
+- bank
+- card
+- category
+- country
+- date
+- email
+- entities
+- entity_type
+- gender
+- mention
+- person
+- phone_number
+- reference
+- transaction
+slots:
+  account:
+    type: text
+  account_number:
+    type: text
+  account_type:
+    type: text
+  allowed_residents:
+    type: text
+  amount:
+    type: text
+  attribute:
+    type: text
+  balance:
+    type: text
+  bank:
+    type: text
+  card:
+    type: text
+  card_number:
+    type: text
+  category:
+    type: text
+  country:
+    type: text
+  created_date:
+    type: text
+  date:
+    type: text
+  email:
+    type: text
+  english_customer_service:
+    type: text
+  english_mobile_app:
+    type: text
+  english_website:
+    type: text
+  entity_type:
+    type: text
+  execution_date:
+    type: text
+  expiry_date:
+    type: text
+  free_accounts:
+    type: text
+  free_worldwide_withdrawals:
+    type: text
+  gender:
+    type: text
+  headquarters:
+    type: text
+  listed_items:
+    type: list
+  mention:
+    type: text
+  name:
+    type: text
+  name_on_card:
+    type: text
+  opening_date:
+    type: text
+  person:
+    type: text
+  phone_number:
+    type: text
+  reference:
+    type: text
+  transaction:
+    type: text
+responses:
+  utter_greet:
+  - text: Hi. I can give you some information about banks or I can give you some details
+      about the accounts you own. What do you want to know?
+  utter_goodbye:
+  - text: Talk to you later!
+  - text: Bye.
+  utter_ok:
+  - text: Ok
+  utter_rephrase:
+  - text: Can you please rephrase?
+  - text: Sorry, I didn't get that. Can you rephrase?
+  
+  utter_out_of_scope:
+  - text: Sorry, I cannot help you with that.
+  - text: I'm not able to help you with that.
+  utter_help:
+  - text: I can tell you some facts about different banks. I can answer some questions
+      about your accounts. And I can show you your recent transactions.
+actions:
+- action_compare_entities
+- action_query_attribute
+- action_query_entities
+- action_resolve_entity
+- utter_greet
+- utter_goodbye
+- utter_ok
+- utter_rephrase
+- utter_out_of_scope
+- utter_help
+
+
