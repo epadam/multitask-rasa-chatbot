@@ -1,3 +1,2 @@
-#Rasa Chatbot with Haystack
+# Rasa Chatbot with Haystack
 
-RASA chatbot with Haystack
