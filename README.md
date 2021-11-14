@@ -8,3 +8,6 @@ To develop a production level chatbot, here are some
 
 1. Continual Learning with your bot
 2. CI/CD for the bot
+   - deploy the bot on kubernetes
+
+3. Monitor the bot
