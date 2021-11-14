@@ -16,6 +16,15 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'data/**'
+      - 'config.yml'
+      - 'domain.yml'
+      - 'actions/**'
+      - 'requirements.txt'
+      - 'Dockerfile'
+      - '.github/trigger.txt'
+
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
@@ -29,6 +38,8 @@ jobs:
     name: Setup, Build, Publish, and Deploy
     runs-on: ubuntu-latest
     environment: production
+    
+    
 
     steps:
     - name: Checkout
