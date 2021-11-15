@@ -15,6 +15,6 @@ To develop a production level chatbot, here are some
 ## Frontend for the bot:
 
 
-## You can ask haystack 
+## Haystack
 
 
