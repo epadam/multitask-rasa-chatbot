@@ -15,7 +15,7 @@ Use Rasa X to talk to your bot and identify incorrection prediction of the model
 2. CI/CD for the bot
    - deploy the bot on kubernetes
 
-3. Monitor the bot
+3. Monitor the bot with prometheus 
 
 
 
