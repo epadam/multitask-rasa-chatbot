@@ -1,8 +1,10 @@
 # Multi-task Rasa Chatbot with Haystack
 
-You can do 
+## Multi-task
 1. chitchat with the bot
 2. Ask questions about *** with the bot (using haystack as backend)
+3. Searching for flights/jobs/hotels
+
 
 To develop a production level chatbot, here are some 
 
@@ -14,6 +16,8 @@ Use Rasa X to talk to your bot and identify incorrection prediction of the model
    - deploy the bot on kubernetes
 
 3. Monitor the bot
+
+
 
 ## Frontend for the bot:
 
