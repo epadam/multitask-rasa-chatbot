@@ -13,7 +13,10 @@ Use Rasa X to talk to your bot and identify incorrection prediction of the model
 
 
 2. CI/CD for the bot
-   - deploy the bot on kubernetes
+
+- How to test your with Github actions using GKE
+- How to deploy your bot on GKE
+
 
 3. Monitor the bot with prometheus 
 
