@@ -25,7 +25,10 @@ Use Rasa X to talk to your bot and identify incorrection prediction of the model
 
 
 
-## Frontend for the bot:
+## Channel for the bot:
+
+Use ui.html to fast test your bot.
+
 https://www.npmjs.com/package/@rasahq/rasa-chat
 https://chat-widget-docs.rasa.com/?path=/docs/rasa-chat-widget--widget
 https://rasa.com/docs/rasa/connectors/your-own-website/#chat-widget
