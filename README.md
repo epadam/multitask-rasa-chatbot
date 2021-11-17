@@ -33,7 +33,12 @@ Use Rasa X to talk to your bot and identify incorrection prediction of the model
 
 ## Need to be done
 
-- Switch to human service
+Action code:
+1. information query(with haystack)
+2. KG query
+3. function usage like book a ticket
+4. external services or human handoff
+
 
 
  
