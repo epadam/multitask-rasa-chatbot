@@ -8,5 +8,21 @@ services:
       - ./:/app
     command:
       - run
-   
-   
+  action:
+    image: <image:tag>
+    expose: 5055
+    
+  duckling:
+    image: rasa/duckling
+    ports: 8000:8000 
+  
+  SQLTrackerStore:
+    image:
+    
+  event-broker:
+    image:
+    
+  RedisLockStore:
+    image:
+
+
