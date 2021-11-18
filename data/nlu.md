@@ -1,3 +1,13 @@
+## intent:knowledge_question
+- Can you look this up: what is ?
+- Look this up: what is?
+- Can you check: what is?
+- please check: What is ?
+- Can you look this up: where is ?
+- Look this up: where is?
+- Can you check: where is?
+- please check: where is ?
+
 ## intent:affirm
 - yes
 - of course
@@ -384,3 +394,9 @@
 
 ## lookup:person
   data/lookup_tables/person.txt
+  
+## intent:bot_challenge
+- are you a bot?
+- are you a human?
+- am I talking to a bot?
+- am I talking to a human?
