@@ -2,13 +2,13 @@ session_config:
   session_expiration_time: 60.0
   carry_over_slots_to_new_session: true
 intents:
-- affirm
-- bye
-- compare_entities
-- deny
 - greet
 - help
+- affirm
+- deny
 - out_of_scope
+- bye
+- compare_entities
 - query_attribute
 - query_entities
 - resolve_entity
