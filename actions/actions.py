@@ -13,7 +13,8 @@ import re
 import csv
 import collections
 
-
+from rasa_sdk.forms import FormAction
+from rasa_sdk.forms import FormValidationAction
 from rasa_sdk.events import SlotSet
 from rasa_sdk import Action, Tracker
 from rasa_sdk.interfaces import Action
@@ -31,6 +32,65 @@ from rasa_sdk.events import (
 
 
 logger = logging.getLogger(__name__)
+
+class ActionOpenIncident(Action):
+    def name(self) -> Text:
+        return "action_open_incident"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        """Create an incident and return details or
+        if localmode return incident details as if incident
+        was created
+        """
+
+        priority = tracker.get_slot("priority")
+        email = tracker.get_slot("email")
+        problem_description = tracker.get_slot("problem_description")
+        incident_title = tracker.get_slot("incident_title")
+        confirm = tracker.get_slot("confirm")
+        if not confirm:
+            dispatcher.utter_message(
+                template="utter_incident_creation_canceled"
+            )
+            return [AllSlotsReset(), SlotSet("previous_email", email)]
+
+        if localmode:
+            message = (
+                f"An incident with the following details would be opened "
+                f"if ServiceNow was connected:\n"
+                f"email: {email}\n"
+                f"problem description: {problem_description}\n"
+                f"title: {incident_title}\npriority: {priority}"
+            )
+        else:
+            snow_priority = snow.priority_db().get(priority)
+            response = snow.create_incident(
+                description=problem_description,
+                short_description=incident_title,
+                priority=snow_priority,
+                email=email,
+            )
+            incident_number = (
+                response.get("content", {}).get("result", {}).get("number")
+            )
+            if incident_number:
+                message = (
+                    f"Successfully opened up incident {incident_number} "
+                    f"for you. Someone will reach out soon."
+                )
+            else:
+                message = (
+                    f"Something went wrong while opening an incident for you. "
+                    f"{response.get('error')}"
+                )
+        dispatcher.utter_message(message)
+        return [AllSlotsReset(), SlotSet("previous_email", email)]
+
 
 class ActionHaystack(Action):
 
