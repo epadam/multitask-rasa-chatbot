@@ -31,76 +31,17 @@ entities:
 - phone_number
 - reference
 - transaction
+
 slots:
-  account:
-    type: text
-  account_number:
-    type: text
-  account_type:
-    type: text
-  allowed_residents:
-    type: text
-  amount:
-    type: text
-  attribute:
-    type: text
-  balance:
-    type: text
-  bank:
-    type: text
-  card:
-    type: text
-  card_number:
-    type: text
-  category:
-    type: text
-  country:
-    type: text
-  created_date:
-    type: text
-  date:
-    type: text
-  email:
-    type: text
-  english_customer_service:
-    type: text
-  english_mobile_app:
-    type: text
-  english_website:
-    type: text
-  entity_type:
-    type: text
-  execution_date:
-    type: text
-  expiry_date:
-    type: text
-  free_accounts:
-    type: text
-  free_worldwide_withdrawals:
-    type: text
-  gender:
-    type: text
-  headquarters:
-    type: text
-  listed_items:
-    type: list
-  mention:
-    type: text
-  name:
-    type: text
-  name_on_card:
-    type: text
-  opening_date:
-    type: text
-  person:
-    type: text
-  phone_number:
-    type: text
-  reference:
-    type: text
-  transaction:
-    type: text
-responses:
+  user_name:
+    type: unfeaturized
+
+
+responses: 
+  utter_ask_user_name:
+  - text: What is your name?
+
+
   utter_greet:
   - text: Hi. I can give you some information about banks or I can give you some details
       about the accounts you own. What do you want to know?
