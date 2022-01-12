@@ -27,6 +27,8 @@ https://github.com/JiteshGaikwad/Chatbot-Widget
 
 ## Need to be done
 
+## TTS and Voice to Text
+
 ## Tips for developing the chatbot
 1. Check how many types of intentions, entities, form slots, actions you need in the beginning.
 2. Testing and adding conversation data to your bot and retrain the model using rasa X. You may need to change the model configuration to improve the accuracy of NLU and policy prediction.
