@@ -25,7 +25,7 @@ https://github.com/JiteshGaikwad/Chatbot-Widget
 
 
 
-## Need to be done
+
 
 ## TTS and Voice to Text
 
@@ -38,6 +38,8 @@ https://github.com/JiteshGaikwad/Chatbot-Widget
 
 4. Monitor your bot
 - prometheus 
+
+## Generate more text data
 
 ## Other usecase of chatbot
 
