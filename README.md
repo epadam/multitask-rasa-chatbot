@@ -1,10 +1,25 @@
 # Multi-task Rasa Chatbot with Haystack
 
+This is a demo how you can use haystack with chatbot interface using RASA
+
+The basic architecture is as below:
+
+
+
+Rasa is also going towards more end-to-end:
+
+Check the blog here: https://rasa.com/blog/were-a-step-closer-to-getting-rid-of-intents/
+
+
 Action code:
 1. information query(with haystack)
 2. KG query
 3. function usage like register for the vaccacine
 4. other external services or human handoff
+
+Rasa is becoming more end-to-end, check the blog:
+ 
+https://rasa.com/blog/were-a-step-closer-to-getting-rid-of-intents/
 
 
 ## Multi-task
