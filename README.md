@@ -5,7 +5,6 @@ This is a demo how you can use haystack with chatbot interface using RASA
 The basic architecture is as below:
 
 
-
 Rasa is also going towards more end-to-end:
 
 Check the blog here: https://rasa.com/blog/were-a-step-closer-to-getting-rid-of-intents/
@@ -36,13 +35,16 @@ https://chat-widget-docs.rasa.com/?path=/docs/rasa-chat-widget--widget
 https://rasa.com/docs/rasa/connectors/your-own-website/#chat-widget
 https://github.com/JiteshGaikwad/Chatbot-Widget
 
+### TTS and Voice to Text
+
 ## Haystack
 
+## CI/CD
+
+1. Use Rasa X
+2. Github Actions
 
 
-
-
-## TTS and Voice to Text
 
 ## Tips for developing the chatbot
 1. Check how many types of intentions, entities, form slots, actions you need in the beginning.
