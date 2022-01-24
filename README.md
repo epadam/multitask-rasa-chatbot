@@ -1,5 +1,9 @@
 # Multi-task Rasa Chatbot with Haystack
 
+## Why use Rasa
+
+1.Flexiable Architecture. TED Policy allows you to directly train end-to-end conversation, also for multi-turn conversation based on Attention mechnism
+
 This is a demo how you can use haystack with chatbot interface using RASA
 
 The basic architecture is as below:
