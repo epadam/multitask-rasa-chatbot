@@ -62,6 +62,8 @@ https://github.com/JiteshGaikwad/Chatbot-Widget
 
 ## Generate more text data
 
+## Text Encryption
+
 ## Other usecase of chatbot
 
 Searching for flights/jobs/hotels, report an incident to database, shopping.
