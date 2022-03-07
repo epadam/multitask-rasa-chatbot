@@ -7,7 +7,9 @@
 The basic architecture is as below:
 
 Input -> intention and NER - (QA)  --> action policy -> encode the sentence -> retrieve -> reader -> return 
+                           
                            - (task)--> action policy -> doing action -> return results
+                           
                            - (KG)  --> action policy -> matching NER in KG -> data to text -> return
 
 ## Multi-task
