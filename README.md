@@ -4,17 +4,18 @@
 
 1.Flexiable Architecture. TED Policy allows you to directly train end-to-end conversation, also for multi-turn conversation based on Attention mechnism
 
-This is a demo how you can use haystack with chatbot interface using RASA
-
 The basic architecture is as below:
 
+Input -> intention and NER - (QA)  --> action policy -> encode the sentence -> retrieve -> reader -> return 
+                           - (task)--> action policy -> doing action -> return results
+                           - (KG)  --> action policy -> matching NER in KG -> data to text -> return
 
-Rasa is also going towards more end-to-end:
+## Multi-task
+1. Chitchat with the bot
+2. Ask questions about covid-19 (using haystack as backend)
+3. A demo that you can register for vacacine in chabot
 
-Check the blog here: https://rasa.com/blog/were-a-step-closer-to-getting-rid-of-intents/
-
-
-Action code:
+## Actions :
 1. information query(with haystack)
 2. KG query
 3. function usage like register for the vaccacine
@@ -24,11 +25,6 @@ Rasa is becoming more end-to-end, check the blog:
  
 https://rasa.com/blog/were-a-step-closer-to-getting-rid-of-intents/
 
-
-## Multi-task
-1. Chitchat with the bot
-2. Ask questions about covid-19 (using haystack as backend)
-3. A demo that you can register for vacacine in chabot
 
 ## Channel for the bot:
 
@@ -41,14 +37,10 @@ https://github.com/JiteshGaikwad/Chatbot-Widget
 
 ### TTS and Voice to Text
 
-## Haystack
-
 ## CI/CD
 
 1. Use Rasa X
 2. Github Actions
-
-
 
 ## Tips for developing the chatbot
 1. Check how many types of intentions, entities, form slots, actions you need in the beginning.
@@ -60,7 +52,7 @@ https://github.com/JiteshGaikwad/Chatbot-Widget
 4. Monitor your bot
 - prometheus 
 
-## Generate more text data
+## How to generate more text data
 
 ## Text Encryption
 
