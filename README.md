@@ -1,6 +1,6 @@
 # Multi-task Rasa Chatbot
 
-## Why use Rasa
+## Advantages of Rasa
 
 1.Flexiable Architecture. TED Policy allows you to directly train end-to-end conversation, also for multi-turn conversation based on Attention mechnism
 
@@ -11,6 +11,17 @@ Input -> intention and NER - (QA)  --> action policy -> encode the sentence -> r
                            - (task)--> action policy -> doing action -> return results
                            
                            - (KG)  --> action policy -> matching NER in KG -> data to text -> return
+## When to use Rasa
+
+1. task oriented chatbot
+2. multi-turn conversation
+
+## When you don't need Rasa
+
+Single turn question without context like: 
+  * simple FAQ chatbot
+  * simple information retrieval
+
 
 ## Multi-task
 1. Chitchat with the bot
