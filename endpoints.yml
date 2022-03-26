@@ -32,3 +32,14 @@ lock_store:
     password: <password used for authentication>
     db: <number of your database within redis, e.g. 0>
     key_prefix: <alphanumeric value to prepend to lock store keys>
+    
+nlg:
+  url: http://localhost:5055/nlg
+  # 
+  # You can also specify additional parameters, if you need them:
+  # headers:
+  #   my-custom-header: value
+  # token: "my_authentication_token"  # will be passed as a GET parameter
+  # basic_auth:
+  #   username: user
+  #   password: pass
