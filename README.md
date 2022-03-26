@@ -1,4 +1,4 @@
-# Multi-task Rasa Chatbot with Haystack
+# Multi-task Rasa Chatbot
 
 ## Why use Rasa
 
